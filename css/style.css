@@ -1,0 +1,669 @@
+/*// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}*/
+* {
+  font-family: 'Montserrat', sans-serif; }
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 766px !important; } }
+body {
+  background: #f1f1f1 url("../img/bd_body_bottom.jpg") no-repeat scroll center bottom;
+  background-size: 100%; }
+
+h1, h2 {
+  letter-spacing: -1px; }
+
+p, ul li {
+  color: #868686; }
+
+strong {
+  color: #545454;
+  font-size: 16px;
+  font-weight: 700; }
+
+.wrapper {
+  overflow: hidden;
+  background: url("../img/bg_body_top.jpg") no-repeat scroll center top;
+  background-size: 100%;
+  padding-top: 100px; }
+  .wrapper .text-warning {
+    color: #c1fd0c !important;
+    font-weight: 700; }
+  .wrapper .text-danger {
+    color: #ff0000 !important;
+    font-weight: 700; }
+  .wrapper .text-success {
+    color: #3ba43e !important;
+    font-weight: 700; }
+  .wrapper .container {
+    background: #fff; }
+  .wrapper .bg {
+    margin-left: -15px;
+    margin-right: -15px; }
+  .wrapper .section-header {
+    background-size: cover !important;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    margin-left: -15px;
+    margin-right: -15px; }
+    @media (min-width: 768px) {
+      .wrapper .section-header {
+        font-size: 34px; } }
+    .wrapper .section-header span.text-warning {
+      font-weight: 800; }
+    .wrapper .section-header .btn-rounded {
+      background: #c1fd0c !important;
+      color: #196862;
+      font-size: 16px;
+      padding: 8px 20px;
+      font-weight: 900;
+      text-transform: uppercase;
+      display: inline-block;
+      -webkit-border-radius: 30px;
+      border-radius: 30px;
+      margin-bottom: 25px;
+      text-decoration: none; }
+      @media (min-width: 768px) {
+        .wrapper .section-header .btn-rounded {
+          font-size: 29px;
+          padding: 8px 35px; } }
+  .wrapper .section-header p {
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 0px; }
+    @media (min-width: 768px) {
+      .wrapper .section-header p {
+        font-size: 34px; } }
+    .wrapper .section-header p span.text-warning {
+      font-weight: 800; }
+  .wrapper .section-content {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto; }
+    .wrapper .section-content ul {
+      padding-left: 0px;
+      list-style: none; }
+      .wrapper .section-content ul li {
+        background: url("../img/triangle_arrow.jpg") no-repeat left top;
+        min-height: 18px;
+        padding-left: 35px;
+        padding-top: 2px;
+        padding-bottom: 18px; }
+        @media (min-width: 768px) {
+          .wrapper .section-content ul li {
+            padding-left: 55px; } }
+    .wrapper .section-content .btn-rounded {
+      background: #c1fd0c !important;
+      color: #196862;
+      font-size: 16px;
+      padding: 8px 25px;
+      font-weight: 900;
+      text-transform: uppercase;
+      display: inline-block;
+      -webkit-border-radius: 30px;
+      border-radius: 30px;
+      margin-bottom: 25px;
+      text-decoration: none; }
+      @media (min-width: 768px) {
+        .wrapper .section-content .btn-rounded {
+          font-size: 29px;
+          padding: 8px 35px; } }
+  .wrapper .section-top {
+    position: relative;
+    background: url(../img/bg_header.jpg) no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 0px 15px 50px; }
+    .wrapper .section-top .headline {
+      background: #0e3c27;
+      font-weight: 600;
+      color: #fff;
+      font-size: 42px;
+      line-height: 43px;
+      text-align: center;
+      padding: 27px 15px 21px;
+      margin: 0px;
+      max-width: 598px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      top: -67px; }
+      @media (min-width: 768px) {
+        .wrapper .section-top .headline {
+          font-size: 63px;
+          line-height: 62px; } }
+    .wrapper .section-top .section-content h2 {
+      font-weight: 800;
+      font-size: 32px;
+      text-transform: uppercase;
+      color: #fff;
+      text-align: center;
+      margin-top: -30px;
+      margin-bottom: 20px; }
+      @media (min-width: 768px) {
+        .wrapper .section-top .section-content h2 {
+          font-size: 46px; } }
+    .wrapper .section-top .section-content p {
+      font-size: 18px;
+      color: #fff; }
+    .wrapper .section-top .section-content .btn-rounded {
+      background: #c1fd0c !important;
+      color: #196862;
+      font-size: 16px;
+      padding: 8px 25px;
+      font-weight: 900;
+      text-transform: uppercase;
+      display: inline-block;
+      -webkit-border-radius: 30px;
+      border-radius: 30px;
+      margin-bottom: 25px;
+      position: relative; }
+      @media (min-width: 768px) {
+        .wrapper .section-top .section-content .btn-rounded {
+          font-size: 29px;
+          padding: 8px 35px; }
+          .wrapper .section-top .section-content .btn-rounded:before {
+            content: "\00BB";
+            position: absolute;
+            left: -54px;
+            top: -32px;
+            color: #fff;
+            font-weight: 700;
+            font-size: 80px; }
+          .wrapper .section-top .section-content .btn-rounded:after {
+            content: "\00AB";
+            position: absolute;
+            right: -54px;
+            top: -32px;
+            color: #fff;
+            font-weight: 700;
+            font-size: 80px; } }
+    .wrapper .section-top .section-content .block-rounded {
+      font-size: 14px;
+      font-weight: 600;
+      max-width: 556px;
+      margin-left: auto;
+      margin-right: auto;
+      color: #fff;
+      border: 3px solid #c1fd0c !important;
+      -webkit-border-radius: 50px;
+      border-radius: 50px;
+      margin-top: 20px;
+      padding: 15px;
+      background: rgba(0, 0, 0, 0.2); }
+      @media (min-width: 768px) {
+        .wrapper .section-top .section-content .block-rounded {
+          font-size: 24px; } }
+  .wrapper .section-california-market {
+    margin-bottom: 43px; }
+    .wrapper .section-california-market .section-header {
+      background: url(../img/bg_leaf.jpg) no-repeat;
+      padding: 50px 30px; }
+      @media (min-width: 768px) {
+        .wrapper .section-california-market .section-header {
+          padding: 50px 60px; } }
+    .wrapper .section-california-market .section-content h2 {
+      text-align: center;
+      color: #3ba43e !important;
+      font-size: 40px;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-top: 40px;
+      margin-bottom: 30px; }
+    .wrapper .section-california-market .section-content p {
+      margin-bottom: 1.5rem; }
+  .wrapper .section-brand-new-business-opportunities {
+    margin-bottom: 60px; }
+    .wrapper .section-brand-new-business-opportunities .section-header {
+      background: url(../img/bg_leaf2.jpg) no-repeat;
+      padding: 50px 30px; }
+    .wrapper .section-brand-new-business-opportunities .section-content {
+      padding-top: 50px; }
+      .wrapper .section-brand-new-business-opportunities .section-content h3 {
+        font-size: 20px;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #545454;
+        line-height: 30px; }
+      .wrapper .section-brand-new-business-opportunities .section-content ul {
+        margin-top: 35px; }
+  .wrapper .section-tomorrows-large-cap-superstar .section-header {
+    background: url(../img/bg_large_cap_superstar.jpg) no-repeat;
+    padding: 50px 30px; }
+    @media (min-width: 768px) {
+      .wrapper .section-tomorrows-large-cap-superstar .section-header {
+        padding: 50px 100px; } }
+  .wrapper .section-tomorrows-large-cap-superstar .section-content {
+    padding-top: 50px; }
+    .wrapper .section-tomorrows-large-cap-superstar .section-content h3 {
+      font-size: 20px;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: #545454;
+      line-height: 30px;
+      margin-bottom: 22px; }
+    .wrapper .section-tomorrows-large-cap-superstar .section-content ul {
+      margin-top: 6px; }
+    .wrapper .section-tomorrows-large-cap-superstar .section-content .block-dark-green {
+      background: #0e3c27;
+      max-width: 550px;
+      text-align: center;
+      padding: 30px 42px 15px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px; }
+      .wrapper .section-tomorrows-large-cap-superstar .section-content .block-dark-green p {
+        color: #fff;
+        font-size: 18px;
+        padding-bottom: 0px; }
+  .wrapper .section-transcanna-holdings {
+    margin-bottom: 35px; }
+    .wrapper .section-transcanna-holdings .section-header {
+      background: url(../img/bg_big.png) no-repeat;
+      min-height: 566px;
+      padding: 50px 30px 0px; }
+      .wrapper .section-transcanna-holdings .section-header p {
+        font-size: 18px; }
+      @media (min-width: 375px) {
+        .wrapper .section-transcanna-holdings .section-header p {
+          font-size: 24px; } }
+      @media (min-width: 768px) {
+        .wrapper .section-transcanna-holdings .section-header {
+          margin-left: -64px;
+          margin-right: -60px; }
+          .wrapper .section-transcanna-holdings .section-header p {
+            font-size: 34px; }
+          .wrapper .section-transcanna-holdings .section-header .btn-rounded-wrapper {
+            position: relative;
+            display: inline-block; }
+            .wrapper .section-transcanna-holdings .section-header .btn-rounded-wrapper:before {
+              content: "\00BB";
+              position: absolute;
+              left: -54px;
+              top: -32px;
+              color: #fff;
+              font-weight: 700;
+              font-size: 80px; }
+            .wrapper .section-transcanna-holdings .section-header .btn-rounded-wrapper:after {
+              content: "\00AB";
+              position: absolute;
+              right: -54px;
+              top: -32px;
+              color: #fff;
+              font-weight: 700;
+              font-size: 80px; } }
+      .wrapper .section-transcanna-holdings .section-header h2 {
+        font-weight: 800;
+        font-size: 32px;
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 60px; }
+        @media (min-width: 768px) {
+          .wrapper .section-transcanna-holdings .section-header h2 {
+            font-size: 46px; } }
+      .wrapper .section-transcanna-holdings .section-header hr {
+        background: #fff;
+        max-width: 635px;
+        margin-left: auto;
+        margin-right: auto; }
+      .wrapper .section-transcanna-holdings .section-header p {
+        max-width: 665px;
+        margin-left: auto;
+        margin-right: auto; }
+    .wrapper .section-transcanna-holdings .section-content h3 {
+      font-size: 20px;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: #545454;
+      line-height: 30px; }
+    .wrapper .section-transcanna-holdings .section-content ul {
+      margin-top: 35px; }
+  .wrapper .section-serve-this-market-properly .section-header {
+    background: url(../img/bg_serve_this_market.jpg) no-repeat;
+    padding: 50px 30px; }
+    @media (min-width: 768px) {
+      .wrapper .section-serve-this-market-properly .section-header {
+        padding: 50px 90px; } }
+  .wrapper .section-serve-this-market-properly .section-content {
+    padding-top: 42px; }
+    .wrapper .section-serve-this-market-properly .section-content h3 {
+      font-size: 20px;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: #545454;
+      line-height: 30px;
+      margin-bottom: 40px; }
+    .wrapper .section-serve-this-market-properly .section-content .images-area img {
+      margin-bottom: 35px; }
+    .wrapper .section-serve-this-market-properly .section-content .quote {
+      font-size: 20px;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: #545454;
+      line-height: 30px;
+      margin-bottom: 50px;
+      color: #3ba43e !important;
+      text-align: center;
+      max-width: 560px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative; }
+      .wrapper .section-serve-this-market-properly .section-content .quote:before {
+        content: "\00BB";
+        position: absolute;
+        color: #c1fd0c !important;
+        font-size: 80px;
+        top: 50%;
+        left: 0%;
+        -webkit-transform: translate(-150%, -50%);
+        -ms-transform: translate(-150%, -50%);
+        -o-transform: translate(-150%, -50%);
+        transform: translate(-150%, -50%); }
+      .wrapper .section-serve-this-market-properly .section-content .quote:after {
+        content: "\00AB";
+        position: absolute;
+        color: #c1fd0c !important;
+        font-size: 80px;
+        top: 50%;
+        right: 0%;
+        -webkit-transform: translate(150%, -50%);
+        -ms-transform: translate(150%, -50%);
+        -o-transform: translate(150%, -50%);
+        transform: translate(150%, -50%); }
+  .wrapper .section-millions-in-the-shareholder-value .section-header {
+    background: url(../img/bg_millions_in_shareholder.jpg) no-repeat;
+    padding: 50px 30px; }
+    @media (min-width: 768px) {
+      .wrapper .section-millions-in-the-shareholder-value .section-header {
+        padding: 50px 80px; } }
+  .wrapper .section-millions-in-the-shareholder-value .section-content {
+    padding-top: 45px; }
+    .wrapper .section-millions-in-the-shareholder-value .section-content h3 {
+      font-size: 25px;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: #545454;
+      line-height: 30px;
+      max-width: 590px;
+      margin-left: auto;
+      margin-right: auto; }
+    .wrapper .section-millions-in-the-shareholder-value .section-content ul {
+      margin-top: 20px; }
+      .wrapper .section-millions-in-the-shareholder-value .section-content ul li:last-child {
+        padding-bottom: 0px; }
+  .wrapper .section-transcanna-holdings2 {
+    margin-bottom: 42px; }
+    .wrapper .section-transcanna-holdings2 .section-header {
+      background: url(../img/bg_transcanna_holdings.png) no-repeat;
+      min-height: 522px;
+      padding: 50px 30px 0px; }
+      .wrapper .section-transcanna-holdings2 .section-header p {
+        font-size: 18px; }
+      @media (min-width: 768px) {
+        .wrapper .section-transcanna-holdings2 .section-header {
+          margin-left: -64px;
+          margin-right: -60px; }
+          .wrapper .section-transcanna-holdings2 .section-header p {
+            font-size: 34px; } }
+      .wrapper .section-transcanna-holdings2 .section-header h2 {
+        font-weight: 800;
+        font-size: 32px;
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 60px; }
+        @media (min-width: 768px) {
+          .wrapper .section-transcanna-holdings2 .section-header h2 {
+            font-size: 46px; } }
+      .wrapper .section-transcanna-holdings2 .section-header hr {
+        background: #fff;
+        max-width: 635px;
+        margin-left: auto;
+        margin-right: auto; }
+      .wrapper .section-transcanna-holdings2 .section-header p {
+        max-width: 665px;
+        margin-left: auto;
+        margin-right: auto; }
+      .wrapper .section-transcanna-holdings2 .section-header .btn-rounded-wrapper {
+        position: relative;
+        display: inline-block; }
+        @media (min-width: 768px) {
+          .wrapper .section-transcanna-holdings2 .section-header .btn-rounded-wrapper:before {
+            content: "\00BB";
+            position: absolute;
+            left: -54px;
+            top: -32px;
+            color: #fff;
+            font-weight: 700;
+            font-size: 80px; }
+          .wrapper .section-transcanna-holdings2 .section-header .btn-rounded-wrapper:after {
+            content: "\00AB";
+            position: absolute;
+            right: -54px;
+            top: -32px;
+            color: #fff;
+            font-weight: 700;
+            font-size: 80px; } }
+    .wrapper .section-transcanna-holdings2 .section-content h3 {
+      font-size: 20px;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: #545454;
+      line-height: 30px; }
+    .wrapper .section-transcanna-holdings2 .section-content ul {
+      margin-top: 15px;
+      margin-bottom: 10px; }
+  .wrapper .section-production-space {
+    margin-bottom: 60px; }
+    .wrapper .section-production-space .section-header {
+      background: url(../img/bg_leaf3.jpg) no-repeat;
+      padding: 50px 30px; }
+      @media (min-width: 768px) {
+        .wrapper .section-production-space .section-header {
+          padding: 50px 80px; } }
+    .wrapper .section-production-space .section-content {
+      padding-top: 42px; }
+      .wrapper .section-production-space .section-content h2 {
+        color: #196862;
+        font-size: 29px;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin-bottom: 20px; }
+      .wrapper .section-production-space .section-content h3 {
+        font-size: 20px;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #545454;
+        line-height: 30px; }
+      .wrapper .section-production-space .section-content .btn-rounded {
+        padding: 8px 32px; }
+      .wrapper .section-production-space .section-content ul {
+        margin-top: 25px; }
+  .wrapper .section-relevant-experience .section-header {
+    background: url(../img/bg_leaf4.jpg) no-repeat;
+    padding: 50px 30px; }
+    @media (min-width: 768px) {
+      .wrapper .section-relevant-experience .section-header {
+        padding: 50px 105px; } }
+  .wrapper .section-relevant-experience .section-content {
+    padding-top: 42px; }
+    .wrapper .section-relevant-experience .section-content h2 {
+      color: #767676;
+      font-size: 29px;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      max-width: 540px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      margin-bottom: 50px; }
+      .wrapper .section-relevant-experience .section-content h2 span {
+        color: #26bd26 !important;
+        font-weight: 900; }
+    .wrapper .section-relevant-experience .section-content h3 {
+      font-size: 20px;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: #545454;
+      line-height: 30px; }
+    .wrapper .section-relevant-experience .section-content ul {
+      margin-top: 0px; }
+      .wrapper .section-relevant-experience .section-content ul li:last-child {
+        padding-bottom: 0px; }
+  .wrapper .section-reasons-to-research {
+    margin-bottom: 60px; }
+    .wrapper .section-reasons-to-research .section-header {
+      background: url(../img/bg_5.png) no-repeat;
+      min-height: 423px;
+      padding: 65px 30px 0px; }
+      @media (min-width: 768px) {
+        .wrapper .section-reasons-to-research .section-header {
+          margin-left: -64px;
+          margin-right: -60px; } }
+      .wrapper .section-reasons-to-research .section-header .header-inner {
+        overflow: hidden; }
+        @media (min-width: 375px) {
+          .wrapper .section-reasons-to-research .section-header .header-inner {
+            padding-top: 28px; } }
+        @media (min-width: 768px) {
+          .wrapper .section-reasons-to-research .section-header .header-inner {
+            padding-top: 0px; } }
+        .wrapper .section-reasons-to-research .section-header .header-inner .number {
+          color: #c1fd0c !important;
+          font-size: 140px;
+          float: left;
+          font-weight: 900; }
+          @media (min-width: 768px) {
+            .wrapper .section-reasons-to-research .section-header .header-inner .number {
+              font-size: 200px;
+              padding-left: 35px;
+              position: relative;
+              top: -8px; } }
+        .wrapper .section-reasons-to-research .section-header .header-inner h2 {
+          margin-left: 100px; }
+          @media (min-width: 768px) {
+            .wrapper .section-reasons-to-research .section-header .header-inner h2 {
+              margin-left: 175px; } }
+      .wrapper .section-reasons-to-research .section-header h2 {
+        font-weight: 800;
+        font-size: 26px;
+        margin-top: 50px;
+        text-transform: uppercase;
+        color: #fff;
+        text-align: left;
+        margin-bottom: 20px; }
+        @media (min-width: 768px) {
+          .wrapper .section-reasons-to-research .section-header h2 {
+            font-size: 43px;
+            margin-top: 60px; } }
+      .wrapper .section-reasons-to-research .section-header hr {
+        background: #fff;
+        max-width: 635px;
+        margin-left: auto;
+        margin-right: auto; }
+      .wrapper .section-reasons-to-research .section-header p {
+        max-width: 665px;
+        margin-left: auto;
+        margin-right: auto; }
+    .wrapper .section-reasons-to-research .section-content h3 {
+      font-size: 16px;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: #3ba43e !important;
+      line-height: 24px;
+      margin-bottom: 25px; }
+    .wrapper .section-reasons-to-research .section-content p {
+      font-size: 12px;
+      line-height: 19px; }
+    .wrapper .section-reasons-to-research .section-content .thumb-wrap {
+      position: relative;
+      max-width: 280px;
+      margin-left: auto;
+      margin-right: auto; }
+      .wrapper .section-reasons-to-research .section-content .thumb-wrap .num {
+        position: absolute;
+        font-size: 90px;
+        font-weight: 900;
+        color: #fff;
+        background: url("../img/bg_number.jpg");
+        width: 97px;
+        height: 116px;
+        text-align: center;
+        line-height: 1;
+        top: 18px;
+        left: -18px;
+        padding-top: 12px; }
+  .wrapper .section-recommendation {
+    margin-bottom: 46px; }
+    .wrapper .section-recommendation .section-header {
+      background: url(../img/recommendations.jpg) no-repeat;
+      padding: 82px 30px; }
+      .wrapper .section-recommendation .section-header p {
+        font-size: 24px;
+        position: relative;
+        display: inline-block; }
+        @media (min-width: 768px) {
+          .wrapper .section-recommendation .section-header p {
+            font-size: 45px; }
+            .wrapper .section-recommendation .section-header p:before {
+              content: "\00BB";
+              position: absolute;
+              left: -64px;
+              top: -32px;
+              color: #fff;
+              font-weight: 800;
+              font-size: 80px; }
+            .wrapper .section-recommendation .section-header p:after {
+              content: "\00AB";
+              position: absolute;
+              right: -64px;
+              top: -32px;
+              color: #fff;
+              font-weight: 800;
+              font-size: 80px; } }
+    .wrapper .section-recommendation .section-content {
+      padding-top: 47px; }
+      .wrapper .section-recommendation .section-content h2 {
+        font-size: 29px;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin-bottom: 20px; }
+      .wrapper .section-recommendation .section-content h3 {
+        font-size: 20px;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #868686;
+        line-height: 30px; }
+      .wrapper .section-recommendation .section-content ul {
+        margin-top: 35px; }
+      .wrapper .section-recommendation .section-content .btn-rounded {
+        padding: 8px 20px; }
+  @media (min-width: 768px) {
+    .wrapper .section-research {
+      margin-bottom: 60px; } }
+  .wrapper .section-research .section-header {
+    background: url(../img/bg_leaf_footer.jpg) no-repeat;
+    padding: 82px 30px 63px; }
+    .wrapper .section-research .section-header h2 {
+      font-size: 32px;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: 20px; }
+      @media (min-width: 768px) {
+        .wrapper .section-research .section-header h2 {
+          font-size: 42px; } }
+    .wrapper .section-research .section-header .btn-rounded {
+      background: #ff0000 !important;
+      color: #fff; }
+
+/*# sourceMappingURL=style.css.map */
